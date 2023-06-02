@@ -10,7 +10,7 @@ intents = discord.Intents(messages=True, guilds=True, reactions=True, presences=
 Bot = commands.Bot(command_prefix="-", intents=intents)
 @Bot.event
 async def on_ready():
-    print("ben hazırım")
+    pass
 @Bot.event
 async def on_message(message):
     await Bot.process_commands(message)
@@ -30,8 +30,6 @@ async def kod_yaz(ctx,arg):
     file = open("ideBot.py","w")
     file.write(kaynakkod1 +"\n"+kod+"\n"+kaynakkod2)
     file.close()
-
-
     file =open("ideBot.py","r")
     bilgi = file.read()
     await ctx.send(bilgi)

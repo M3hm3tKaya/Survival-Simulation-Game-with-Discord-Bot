@@ -7,7 +7,6 @@ import time
 import ast
 import asyncio
 
-
 intents = discord.Intents(messages=True, guilds=True, reactions=True, presences=True, members=True)
 Bot = commands.Bot(command_prefix="-", intents=intents)
 
