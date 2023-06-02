@@ -922,4 +922,4 @@ async def msj2(ctx):
     channel = Bot.get_channel(901157493126881290)
     await channel.send("a")
 
-Bot.run("OTM0MDgwNzA5NzI1OTE3MjE0.Yeq4cw.-b_0sN6Ye9na278UNCFOh3ntEpA")
+Bot.run("TOKEN")
