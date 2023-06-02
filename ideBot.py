@@ -10,7 +10,7 @@ intents = discord.Intents(messages=True, guilds=True, reactions=True, presences=
 Bot = commands.Bot(command_prefix="-", intents=intents)
 @Bot.event
 async def on_ready():
-    pass
+    print("hazırım")
 @Bot.event
 async def on_message(message):
     await Bot.process_commands(message)
